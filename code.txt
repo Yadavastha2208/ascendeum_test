@@ -1,0 +1,11 @@
+num = int(input("Enter your number here: "))
+for i in range(1,num+1):
+    print(" "*(num-i),end="") # For the empty spaces
+    for j in range(0,i):
+        print(chr(65+j),end=" ") # For the upper half of the diamond
+    print()
+for i in range(num-1,0,-1):
+    print(" "*(num-i),end="") #For the empty spaces
+    for j in range(0,i):
+        print(chr(65+j),end=" ") # For the lower half of the diamond
+    print()
